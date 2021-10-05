@@ -7,6 +7,7 @@ import {MatSort} from "@angular/material/sort";
 import {NgForm} from "@angular/forms";
 // @ts-ignore
 import * as _ from 'lodash';
+import {DataService} from "../services/data.service";
 @Component({
   selector: 'app-guardians',
   templateUrl: './guardians.component.html',
@@ -22,7 +23,7 @@ export class GuardiansComponent implements OnInit {
   @ViewChild('guardianForm', {static: false})
   studentForm!: NgForm;
   isEditMode = false;
-  constructor(private guardiansService:GuardiansService) {
+  constructor(private guardiansService:GuardiansService ,public dataSertvice:DataService) {
     this.dataSource = new MatTableDataSource<Guardian>();
     this.guardianCurrent={} as Guardian;
   }
@@ -82,6 +83,8 @@ export class GuardiansComponent implements OnInit {
     this.studentForm.resetForm();
     this.isEditMode=false;
   }
-
+  sendGuardianToUrgencies(element:Guardian){
+   this.dataSertvice.currentGuardian=element;
+  }
 
 }

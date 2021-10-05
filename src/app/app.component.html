@@ -4,6 +4,7 @@
   <div class="mat-spacer"></div>
   <!-- App Options -->
   <a mat-button [routerLink]="'/home'" >Home</a>
-  <a mat-button >Guardians</a>
+  <a mat-button [routerLink]="'/urgencies'" >Urgencies</a>
+  <h1>{{this.dataService.currentGuardian.username}}</h1>
 </mat-toolbar>
 <router-outlet></router-outlet>

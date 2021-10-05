@@ -8,11 +8,13 @@ import { MaterialModule} from "./material/material.module";
 import {HttpClientModule} from "@angular/common/http";
 import {MatSortModule} from "@angular/material/sort";
 import {FormsModule} from "@angular/forms";
+import { UrgenciesComponent } from './urgencies/urgencies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GuardiansComponent,
+    UrgenciesComponent,
   ],
   imports: [
     BrowserModule,

@@ -82,7 +82,7 @@
       <a class="upIcon" (click)="deleteGuardian(element)">
         <mat-icon>delete</mat-icon>
       </a>
-      <a class="upIcon" (click)="sendGuardianToUrgencies(element)">
+      <a class="upIcon" (click)="sendGuardianToUrgencies(element)" [routerLink]="'/urgencies'">
         <mat-icon>work</mat-icon>
       </a>
     </td>

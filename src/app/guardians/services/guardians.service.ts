@@ -14,4 +14,8 @@ export class GuardiansService {
     return this.http.get<Guardian[]>(baseUrl)
   }
 
+  delete(id:any): Observable<Guardian> {
+    return this.http.delete<Guardian>(`${baseUrl}/${id}`);
+  }
+
 }

@@ -13,9 +13,14 @@ export class GuardiansService {
   getAll():Observable<Guardian[]>{
     return this.http.get<Guardian[]>(baseUrl)
   }
-
+  create(data:Guardian): Observable<Guardian>{
+    return this.http.post<Guardian>(baseUrl, data);
+  }
   delete(id:any): Observable<Guardian> {
     return this.http.delete<Guardian>(`${baseUrl}/${id}`);
+  }
+  update(id:number,data:Guardian): Observable<Guardian>{
+    return this.http.put<Guardian>(`${baseUrl}/${id}`,data)
   }
 
 }

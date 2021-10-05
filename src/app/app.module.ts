@@ -7,6 +7,7 @@ import { GuardiansComponent } from './guardians/guardians.component';
 import { MaterialModule} from "./material/material.module";
 import {HttpClientModule} from "@angular/common/http";
 import {MatSortModule} from "@angular/material/sort";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatSortModule} from "@angular/material/sort";
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    MatSortModule
+    MatSortModule,
+    FormsModule
 
   ],
   providers: [],

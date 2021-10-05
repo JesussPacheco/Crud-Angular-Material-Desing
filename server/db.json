@@ -1,13 +1,54 @@
 {
   "Guardians": [
     {
-      "id": 1,
-      "username": "Berthanlewis13",
+      "id": 4,
+      "username": "npnpo",
       "email": "LewisB@gmail.com",
       "firstName": "Bertha",
       "lastName": "Lewis",
       "gender": "femenine",
       "address": "Av:Brooklyn street 2"
+    },
+    {
+      "username": "Jesús Pachec little",
+      "gender": "123",
+      "address": "sdfsdf",
+      "id": 5
+    },
+    {
+      "username": "Lucia",
+      "gender": "quispe",
+      "address": "dasdead",
+      "id": 6
+    },
+    {
+      "username": "Jesús Pacheco",
+      "gender": "sdfsdf",
+      "address": "sdfsdf",
+      "id": 7
+    },
+    {
+      "username": "ez",
+      "gender": "ez",
+      "address": "qwqq",
+      "id": 8
+    },
+    {
+      "username": "F",
+      "gender": "F",
+      "address": "F",
+      "id": 9
+    },
+    {
+      "gender": "I",
+      "address": "II",
+      "id": 10
+    },
+    {
+      "gender": "UUU",
+      "address": "UUUU",
+      "username": "UY",
+      "id": 11
     }
   ]
 }

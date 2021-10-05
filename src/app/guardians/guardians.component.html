@@ -1,3 +1,28 @@
+<div class="table-wrapper">
+<h1>Students Catalogue</h1>
+<h2>{{ isEditMode ? 'Edit Guardian' : 'Add Guardian'}}</h2>
+<form (submit)="addGuardian()" #guardianForm='ngForm'>
+  <mat-form-field>
+    <input matInput placeholder="Name" name="name" required
+           [(ngModel)]="guardianCurrent.username">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Age" name="age" required
+           [(ngModel)]="guardianCurrent.gender">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Address" name="address" required
+           [(ngModel)]="guardianCurrent.address" >
+  </mat-form-field>
+  <ng-container *ngIf="isEditMode; else elseTemplate">
+    <button mat-button color="primary" (click)="updateGuardian()">Update</button>
+    <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <button mat-button color="primary">Add</button>
+  </ng-template>
+</form>
+
 <mat-form-field appearance="standard">
   <mat-label>Filter</mat-label>
   <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
@@ -50,7 +75,7 @@
   <ng-container matColumnDef="actions">
     <th mat-header-cell *matHeaderCellDef></th>
     <td mat-cell *matCellDef="let element">
-      <a class="upIcon">
+      <a class="upIcon" (click)="editGuardian(element)">
         <mat-icon>edit</mat-icon>
       </a>
 
@@ -63,4 +88,4 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
-
+</div>

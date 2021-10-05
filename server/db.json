@@ -10,40 +10,10 @@
       "address": "Av:Brooklyn street 2"
     },
     {
-      "username": "Jesús Pachec little",
-      "gender": "123",
-      "address": "sdfsdf",
-      "id": 5
-    },
-    {
-      "username": "Lucia",
-      "gender": "quispe",
-      "address": "dasdead",
-      "id": 6
-    },
-    {
-      "username": "ez",
-      "gender": "ez",
-      "address": "qwqq",
-      "id": 8
-    },
-    {
-      "username": "8o",
-      "gender": "ooo",
-      "address": "ioi",
-      "id": 9
-    },
-    {
       "username": ",,,",
       "gender": ",o",
       "address": "oyoy",
       "id": 10
-    },
-    {
-      "username": "sfdsf",
-      "gender": "saaaa",
-      "address": "sadfhhh",
-      "id": 11
     },
     {
       "username": "eerad",
@@ -59,7 +29,7 @@
       "summary": "Algo :v",
       "latitude": 3400,
       "longitude": 1882,
-       "guardianId":12
+      "guardianId": 4
     },
     {
       "id": 2,
@@ -67,7 +37,7 @@
       "summary": "Algo :v",
       "latitude": 3400,
       "longitude": 1882,
-      "guardianId":5
+      "guardianId": 10
     },
     {
       "id": 3,
@@ -75,7 +45,7 @@
       "summary": "Algo :v",
       "latitude": 3400,
       "longitude": 1882,
-      "guardianId":5
+      "guardianId": 12
     },
     {
       "id": 4,
@@ -83,7 +53,7 @@
       "summary": "Algo :v",
       "latitude": 3400,
       "longitude": 1882,
-      "guardianId":5
+      "guardianId": 8
     }
   ]
 }

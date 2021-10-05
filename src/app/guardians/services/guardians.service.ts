@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import{Guardian }from "../Models/guardian"
-const baseUrl="http://localhost:3000/Guardians"
+import {Urgency} from "../../urgencies/models/urgency";
+const baseUrl="http://localhost:3000/guardians"
 @Injectable({
   providedIn: 'root'
 })
@@ -22,6 +23,7 @@ export class GuardiansService {
   update(id:number,data:Guardian): Observable<Guardian>{
     return this.http.put<Guardian>(`${baseUrl}/${id}`,data)
   }
+
 
 
 }

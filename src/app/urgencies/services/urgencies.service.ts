@@ -26,4 +26,7 @@ export class UrgenciesService {
   getByGuardianId(id: number): Observable<Urgency[]> {
     return this.http.get<Urgency[]>(`http://localhost:3000/guardians/${id}/urgencies`);
   }
+  deleteUrgencies(id:number): Observable<Urgency[]> {
+    return this.http.delete<Urgency[]>(`http://localhost:3000/guardians/${id}/urgencies`);
+  }
 }

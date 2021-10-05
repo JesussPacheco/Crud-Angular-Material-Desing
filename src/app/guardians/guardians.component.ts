@@ -8,6 +8,7 @@ import {NgForm} from "@angular/forms";
 // @ts-ignore
 import * as _ from 'lodash';
 import {DataService} from "../services/data.service";
+import {Urgency} from "../urgencies/models/urgency";
 @Component({
   selector: 'app-guardians',
   templateUrl: './guardians.component.html',
@@ -23,7 +24,7 @@ export class GuardiansComponent implements OnInit {
   @ViewChild('guardianForm', {static: false})
   studentForm!: NgForm;
   isEditMode = false;
-  constructor(private guardiansService:GuardiansService ,public dataSertvice:DataService) {
+  constructor(private guardiansService:GuardiansService ,public dataService:DataService) {
     this.dataSource = new MatTableDataSource<Guardian>();
     this.guardianCurrent={} as Guardian;
   }
@@ -84,7 +85,7 @@ export class GuardiansComponent implements OnInit {
     this.isEditMode=false;
   }
   sendGuardianToUrgencies(element:Guardian){
-   this.dataSertvice.currentGuardian=element;
+   this.dataService.currentGuardian=element;
   }
 
 }

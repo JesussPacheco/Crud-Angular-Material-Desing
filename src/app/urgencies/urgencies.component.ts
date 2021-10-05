@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Urgency} from "./models/urgency";
 import {UrgenciesService} from "./services/urgencies.service";
 import {DataService} from "../services/data.service";
+import {Guardian} from "../guardians/Models/guardian";
 
 @Component({
   selector: 'app-urgencies',
@@ -26,6 +27,10 @@ export class UrgenciesComponent implements OnInit {
         console.log(error);
         })
    }
-
-
+  deleteUrgencies(guardian:Guardian):void{
+    this.urgenciesService.deleteUrgencies(guardian.id).subscribe( (data)=>{
+      console.log(data);
+    },(error)=>{
+    } );
+  }
 }

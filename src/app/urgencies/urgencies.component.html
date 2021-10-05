@@ -2,5 +2,7 @@
 <ul>
   <li *ngFor="let urgency of currentUrgencies">
     {{urgency.title}}
+    <button (click)="deleteUrgencies(this.dataService.currentGuardian)">click para borrar</button>
   </li>
+
 </ul>
